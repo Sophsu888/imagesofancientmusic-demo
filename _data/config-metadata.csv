@@ -1,5 +1,6 @@
 field,display_name,browse_link,external_link
 title,Title,
+media_url,Media URL,,true
 creator,Creator,
 date,Date Created,
 description,Description,
