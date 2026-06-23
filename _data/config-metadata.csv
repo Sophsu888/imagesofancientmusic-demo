@@ -1,14 +1,30 @@
 field,display_name,browse_link,external_link
 title,Title,
-media_url,Media URL,,true
-creator,Creator,
-date,Date Created,
+creator,Collection Creator,
+artist,Artist,
+location,Repository,
+museum_entry_link,Museum Entry Link,,true
+accession_number,Accession Number,
 description,Description,
 subject,Subjects,true
-location,Location
-latitude,Latitude
-longitude,Longitude
-source,Source
+earliest_date,Earliest Date,
+latest_date,Latest Date,
+media_url,Media URL,,true
+country,Country
+culture,Culture
+creation_or_discovery_site,Creation or Discovery Site,
+style_or_period,Style or Period,
+materials_or_techniques,Materials and Techniques,
+measurements,Measurements,
+distinction,Distinction,
+grouping,Grouping,
+collection_grouping_location_notes,Collection Notes,
+collection_number,Collection Location,
+relationships,Relationships with Other Entries,
+date,Date Photographed,
+latitude,Latitude,
+longitude,Longitude,
+source,Source,
 identifier,Source Identifier,,
 type,Type,
 format,Format,
