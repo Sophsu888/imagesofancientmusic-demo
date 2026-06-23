@@ -30,3 +30,4 @@ type,Type,
 format,Format,
 rights,Rights,
 rightsstatement,Rights Statement,,true
+license_info,License Info
