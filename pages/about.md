@@ -34,7 +34,7 @@ Relationships: Occasionally entries in collections/alternate angles will also ha
 
 ## Many Thanks to All Contributors: 
 
-*Tim Moore* - Project Leader and Principal Investigator
+Tim Moore - Project Leader and Principal Investigator
 
 Michael Whisenhunt - Photographer 
 
