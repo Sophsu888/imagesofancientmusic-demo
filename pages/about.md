@@ -35,13 +35,22 @@ Relationships: Occasionally entries in collections/alternate angles will also ha
 ## Many Thanks to All Contributors: 
 
 Tim Moore - Project Leader and Principal Investigator
+
 Michael Whisenhunt - Photographer 
+
 Sophie Hsu - Metadata Development, IA and Collection Builder Architect
+
 Jackie Clay - Metadata Development
+
 Jin Lee - Metadata Development
+
 Carolyn Pohl - Metadata Development
+
 Jordan Coley - Metadata Development
 
+
 Mitch Sumner - Digital Collections Advisor
+
 Douglas Knox - Advisor
+
 Shannon Davis - Advisor
