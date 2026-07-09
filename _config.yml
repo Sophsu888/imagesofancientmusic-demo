@@ -20,12 +20,52 @@ source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Ancient Music Demo
+title: Images of Ancient Music Database
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: A test demo
+tagline: This database contains images associated with the music of ancient Greece and Rome and other images connected with Greco-Roman antiquity and its reception. 
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
+description: "A Collection from the WashU Department of Classics
+
+A Guide to the Entry Metadata:
+
+Publication Date: Date entry was photographed.
+
+Topics: "Tags" that you can sort the database by. Look at the bar on the left of the page under the subject field and select appropriate keywords to your inquiry.
+
+Rights: Creative Commons Rights.
+
+A_repository_entry_link: Extremely helpful links to origin repositories/other databases that have publicly uploaded the same entry online. Here you can gather significant amounts of additional metadata, often straight from museums and credible actors. 
+
+Accession_number: The direct identification number the origin repository uses to identify the depicted item on their database. Provided occasionally but not always. 
+
+Addeddate: When entry was added to IA database.
+
+Collection_added: Shows that this is under WashU Classics.
+
+Collection_grouping: Extremely important when entries belong to collections. This means that there are multiple database pictures of this same exhibit focusing on different items pictured, i.e. two clarinets in one photo will likely have two unique entries, in which both can be found by searching this collection grouping name.
+
+Grouping: Notes if entry belongs to a collection or if there are multiple photos of the same object depicting additional angles (if yes, follow process above).
+
+Identifier: Unique string of numbers associated with only one entry.
+
+Earliest_date and Latest_date: The most probable time period/year we could find for when an item was actually created, or at the very least obtained by a museum. Often a span of time, i.e. earliest date=750BC and latest date = 690BC. If vague, try checking repository entry link if there is one.
+
+Relationships: Occasionally entries in collections/alternate angles will also have this category, which gives the name of these related files. One could then directly find related entries by searching the given filename on the database. 
+
+Many Thanks to All Contributors: 
+
+Tim Moore - Project Leader and Principal Investigator
+Michael Whisenhunt - Photographer 
+Sophie Hsu - Metadata Development and IA Database Architect
+Jackie Clay - Metadata Development
+Jin Lee - Metadata Development
+Carolyn Pohl - Metadata Development
+Jordan Coley - Metadata Development
+
+Mitch Sumner - Digital Collections Advisor
+Douglas Knox - Advisor
+Shannon Davis - Advisor"
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: SH
 
