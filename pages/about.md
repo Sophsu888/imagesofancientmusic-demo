@@ -2,6 +2,7 @@
 title: About
 layout: about
 permalink: /about.html
+about-featured-image: SSID19334407_000362901_3600.jpg
 # include CollectionBuilder info at bottom
 credits: true
 # Edit the markdown on in this file to describe your collection
