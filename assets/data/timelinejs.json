@@ -24,7 +24,7 @@
           "caption": {{ item.title | jsonify }},
           "link": "{{ '/item.html' | absolute_url | append: '?id=' | append: item.objectid }}",
           "credit": "{{ site.title }}"
-        },
+        }
       "start_date": {
   "year": {{ item.year | strip | plus: 0 }}
 },
