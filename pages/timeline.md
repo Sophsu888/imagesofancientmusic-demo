@@ -2,6 +2,7 @@
 title: Timeline
 layout: page-full-width
 permalink: /timeline.html
+timeline-field: year
 # a timeline visualization will be added below the content in this file
 ---
 
