@@ -27,7 +27,7 @@
         },
       "start_date": {
   "year": {{ item.year | strip | plus: 0 }}
-}
+},
         "text": {
           "headline": {{ item.title | jsonify }}{% if item.description %},
           "text": {{ item.description | jsonify }}{% endif %}
