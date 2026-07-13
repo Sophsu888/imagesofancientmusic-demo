@@ -25,12 +25,9 @@
           "link": "{{ '/item.html' | absolute_url | append: '?id=' | append: item.objectid }}",
           "credit": "{{ site.title }}"
         },
-        "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
-          "month": "{{ dates[1] }}",
-          "day": "{{ dates[2] }}",
-          "year": "{{ dates[0] }}"{% elsif item.date contains '/' %}"year": "{{ item.date | strip | split: '/' | last }}"{% else %}
-          "year": "{{ item.date }}"{% endif %}
-        },
+      "start_date": {
+  "year": {{ item.year | strip | plus: 0 }}
+}
         "text": {
           "headline": {{ item.title | jsonify }}{% if item.description %},
           "text": {{ item.description | jsonify }}{% endif %}
