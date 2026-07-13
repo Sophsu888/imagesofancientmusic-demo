@@ -27,5 +27,20 @@
     // and the element must have CSS styling to give it width and height
     // optionally, a third argument with configuration options can be passed.
     // See below for more about options.
-    timeline = new TL.Timeline('timeline-embed', '{{ json }}');
+
+var options = {
+  initial_zoom: 7,
+  optimal_tick_width: 150,
+  timenav_height: 300,
+  marker_width_min: 150,
+  marker_height_min: 45,
+  marker_padding: 10,
+  use_bc: true
+};
+
+var timeline = new TL.Timeline(
+  'timeline-embed',
+  'assets/data/timelinejs.json',
+  options
+);
 </script>
