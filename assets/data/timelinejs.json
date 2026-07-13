@@ -17,21 +17,33 @@
           "text": {{ site.description | jsonify }}
         }
     },
-    "events": [
-      {% for item in items %}{% if item.date %}{
-        "media": {
-          "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.filename contains 'http' %}{{ item.filename }}{% else %}{{ item.filename | prepend: '/objects/' | absolute_url }}{% endif %}",
-          "caption": {{ item.title | jsonify }},
-          "link": "{{ '/item.html' | absolute_url | append: '?id=' | append: item.objectid }}",
-          "credit": "{{ site.title }}"
-        }
-      "start_date": {
-  "year": {{ item.year | strip | plus: 0 }}
-},
-        "text": {
-          "headline": {{ item.title | jsonify }}{% if item.description %},
-          "text": {{ item.description | jsonify }}{% endif %}
-        }
-      }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
-    ]
-}
+  {%- assign timeline_items = items | where_exp: "item", "item.year" -%}
+
+"events": [
+  {% for item in timeline_items %}
+  {
+    "media": {
+      "url": {% if item.youtubeid %}
+        {{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid | jsonify }}
+      {% elsif item.vimeoid %}
+        {{ 'https://vimeo.com/' | append: item.vimeoid | jsonify }}
+      {% elsif item.filename contains 'http' %}
+        {{ item.filename | jsonify }}
+      {% else %}
+        {{ item.filename | prepend: '/objects/' | absolute_url | jsonify }}
+      {% endif %},
+      "caption": {{ item.title | jsonify }},
+      "link": {{ '/item.html' | absolute_url | append: '?id=' | append: item.objectid | jsonify }},
+      "credit": {{ site.title | jsonify }}
+    },
+    "start_date": {
+      "year": {{ item.year | strip | plus: 0 }}
+    },
+    "text": {
+      "headline": {{ item.title | jsonify }}{% if item.description %},
+      "text": {{ item.description | jsonify }}{% endif %}
+    }
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+ }
