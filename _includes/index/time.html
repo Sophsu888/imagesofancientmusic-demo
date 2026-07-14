@@ -13,19 +13,47 @@
     - "heading_level" = customize the level of the heading if necessary for accessibility, choose "h1", "h2", "h3", etc (optional, default "h2")
 
 {%- endcomment -%}
-{% assign date_field = include.date_field | default: 'date' %}
+{% assign date_field = include.date_field | default: 'year' %}
+
 {% if site.data.theme.timeline-child-objects == true %}
-{%- assign date-items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+  {%- assign date-items = site.data[site.metadata] | where_exp: 'item', 'item.objectid' -%}
 {% else %}
-{%- assign date-items = site.data[site.metadata] | where_exp: 'item', 'item.objectid' | where_exp: 'item','item.parentid == nil' -%}
+  {%- assign date-items = site.data[site.metadata]
+      | where_exp: 'item', 'item.objectid'
+      | where_exp: 'item', 'item.parentid == nil' -%}
 {% endif %}
-{%- assign raw-dates = date-items | map: date_field | compact | uniq -%}
-{%- capture clean-years -%}{% for date in raw-dates %}{% if date contains "-" %}{{ date | strip | split: "-" | first }}{% elsif date contains "/" %}{{ date | strip | split: "/" | last }}{% else %}{{ date | strip }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{%- endcapture -%}
-{%- assign date-range = clean-years | remove: " " | split: ";" | uniq | sort  -%}
+
+{%- assign earliest-year = nil -%}
+{%- assign latest-year = nil -%}
+
+{%- for item in date-items -%}
+  {%- if item[date_field] -%}
+    {%- assign numeric-year = item[date_field] | plus: 0 -%}
+
+    {%- if earliest-year == nil or numeric-year < earliest-year -%}
+      {%- assign earliest-year = numeric-year -%}
+    {%- endif -%}
+
+    {%- if latest-year == nil or numeric-year > latest-year -%}
+      {%- assign latest-year = numeric-year -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
 <div class="card mb-3">
     <div class="card-body">
         <{{ include.heading_level | default: 'h2' | strip }} class="card-title h5">Time Span</{{ include.heading_level | default: 'h2' | strip }}>
-        <p class="card-text h5">{{ date-range | first }} to {{ date-range | last }}
+<p class="card-text h5">
+  {% if earliest-year < 0 %}
+    {{ earliest-year | times: -1 }} BC
+  {% else %}
+    {{ earliest-year }} AD
+  {% endif %}
+  to
+  {% if latest-year < 0 %}
+    {{ latest-year | times: -1 }} BC
+  {% else %}
+    {{ latest-year }} AD
+  {% endif %}
         <br><a href="{{ '/timeline.html' | relative_url }}" class="btn btn-sm btn-{{ include.btn-color | default: 'outline-secondary' }} mt-2">View Timeline</a></p>
     </div>
 </div>
