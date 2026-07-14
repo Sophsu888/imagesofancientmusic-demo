@@ -8,6 +8,8 @@ timeline-field: year
 
 {% include feature/timelinejs.html %}
 
+
+
 ## Using the Timeline
 The timeline can be used either through flipping through entries using the arrows on the left and right, or directly scrolling on the timeline itself. 
 
