@@ -2,7 +2,7 @@
 title: About the Images of Ancient Music Database
 layout: about
 permalink: /about.html
-about-featured-image: SSID19334177_000362672_3600.jpg
+about-featured-image: [SSID19334177_000362672_3600.jpg](https://sophsu888.github.io/imagesofancientmusic-demo/item.html?id=SSID19249900_0311010510_1024.jpg)
 # include CollectionBuilder info at bottom
 credits: true
 ---
