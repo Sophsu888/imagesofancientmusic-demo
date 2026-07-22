@@ -9,7 +9,7 @@ credits: true
 
 {% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %}
 
-## A Collection from the WashU Department of Classics, under the Timothy Moore Project Collection.
+## A Collection from the WashU Department of Classics under the Timothy Moore Project Collection.
 
 ## A Guide to the Entry Metadata:
 
