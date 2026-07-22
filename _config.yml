@@ -26,9 +26,14 @@ tagline: This Database Contains Images Associated with the Music of Ancient Gree
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 description: >
-A Collection from the WashU Department of Classics. This database includes photos of over 800 extant instruments and works of art showing the music and dance of ancient Greece and Rome, as well as other images related to the ancient Mediterranean world and its influence.
+  A Collection from the WashU Department of Classics. This database includes
+  photos of over 800 extant instruments and works of art showing the music and
+  dance of ancient Greece and Rome, as well as other images related to the
+  ancient Mediterranean world and its influence.
 
-This site has organized available information on all entries into navigable pages. The home page contains widgets of information and additional information can be found by navigating to each major page.
+  This site has organized available information on all entries into navigable
+  pages. The home page contains widgets of information, and additional
+  information can be found by navigating to each major page.
 
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: SH
