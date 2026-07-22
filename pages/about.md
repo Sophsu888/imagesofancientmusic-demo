@@ -7,7 +7,7 @@ about-featured-image: SSID19249900_0311010510_1024.jpg
 credits: true
 ---
 
-{% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %}
+{% include feature/jumbotron.html objectid=page.about-featured-image %}
 
 ## A Collection from the WashU Department of Classics under the Timothy Moore Project Collection.
 
