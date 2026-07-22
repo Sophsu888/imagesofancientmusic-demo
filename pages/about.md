@@ -10,11 +10,9 @@ credits: true
 {% include feature/jumbotron.html objectid=page.about-featured-image %}
 
 ## A Collection from the WashU Department of Classics under the Timothy Moore Project Collection.
-
 ## Many Thanks to All Contributors: 
 
 **Tim Moore** - Project Leader and Principal Investigator
-
 
 **Sophie Hsu** - Metadata Development, IA and Collection Builder Architect
 
