@@ -165,7 +165,9 @@ Example Code --> `{% raw %}{% include feature/cloud.html fields="subject" min="1
 
 #### TimelineJS
 
-{% include feature/timelinejs.html  %}
+{% comment %}
+{% include feature/timelinejs.html %}
+{% endcomment %}
 
 Example Code --> `{% raw %}{% include feature/timelinejs.html  %}{% endraw %}`
 
