@@ -11,7 +11,9 @@ credits: true
 
 ## A Collection from the WashU Department of Classics under the Timothy Moore Project Collection.
 
-This site builds upon its home collection on Internet Archive, located here: https://archive.org/details/imagesofancientmusic.
+This site builds upon its home collection on Internet Archive, located here: <a href="https://archive.org/details/imagesofancientmusic." target="_blank">
+  Internet Archive
+</a>
 
 You will find this database has many advantages over its predecessor, with increased navigability, sorting, and visualiation features. The original IoAM Database was on JSTOR until 2026. 
 
