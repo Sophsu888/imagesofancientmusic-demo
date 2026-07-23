@@ -15,7 +15,7 @@ This site builds upon its home collection on the <a href="https://archive.org/de
   Internet Archive Images of Ancient Music Database
 </a>
 
-You will find this database has many advantages over its predecessor, with increased navigability, sorting, and visualiation features. The original IoAM Database was on JSTOR until 2026. 
+You will find this database has many advantages over its predecessor, with improved navigation, sorting, and visualization features. The original IoAM Database was hosted on JSTOR until 2026. 
 
 Please reach out to Tim Moore or Sophie Hsu (hsusophiew@gmail.com) with inquiries or suggestions.
 
