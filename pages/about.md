@@ -29,7 +29,7 @@ Please reach out to Tim Moore or Sophie Hsu (hsusophiew@gmail.com) with inquirie
 
 **Grouping**: Notes if entry belongs to a collection or if there are multiple photos of the same object depicting additional angles.
 
-**Collection Notes**: Distinguishes what collection/ set of alternate angles an item belongs to, if it has a grouping. This means that there are multiple database pictures of this same exhibit focusing on different items pictured, i.e. two clarinets in one photo will likely have two unique entries, in which both can be found by searching this collection grouping name.
+**Collection Notes**: Distinguishes what collection/set of alternate angles an item belongs to, if it has a grouping. This means that there are multiple database pictures of this same exhibit focusing on different items pictured, i.e. two clarinets in one photo will likely have two unique entries, in which both can be found by searching this collection grouping name.
 
 **Identifier**: Unique string of numbers associated with only one entry. You can find this in the url of any entry. 
 
